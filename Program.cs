@@ -83,7 +83,7 @@ namespace Zadaci_3
 
         static void Brisanje()
         {
-            
+            Prikaz();
             Console.Write("\nOdaberite kontakt koji zelite da obrisete > ");
             proveraUnosa(out int obrisati);
             Imenik.Osobe.RemoveAt(obrisati - 1);
