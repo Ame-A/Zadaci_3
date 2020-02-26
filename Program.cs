@@ -11,11 +11,10 @@ namespace Zadaci_3
     {
         static void Main()
         {
-            char unos_korisnika = ' ';
             do
             {
                 Meni();
-                unos_korisnika = Console.ReadKey().KeyChar;
+                char unos_korisnika = Console.ReadKey().KeyChar;
                 if (Imenik.Osobe.Count == 0 && unos_korisnika != '1')
                 {
                     if (unos_korisnika == '0')
@@ -45,7 +44,7 @@ namespace Zadaci_3
                         break;
                 }
 
-            } while (unos_korisnika != '0');
+            } while (true);
         }
 
         static void Meni()
